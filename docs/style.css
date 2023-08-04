@@ -1,0 +1,28 @@
+body {
+  --headerHeight: 30px;
+  margin: 0px;
+  overflow: hidden;
+  background: white;
+}
+
+#controls {
+  height: var(--headerHeight);
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  background-color: black;
+  align-items: center;
+}
+
+label {
+  color: white;
+}
+
+#wrapper {
+  box-sizing: border-box;
+  padding: 0;
+  height: calc(100vh - var(--headerHeight));
+  width: 100vw;
+  border: 5px solid black;
+  border-top: 0;
+}

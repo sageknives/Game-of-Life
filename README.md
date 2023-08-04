@@ -1,4 +1,4 @@
-Conways Game of Life using typescript and Canvas. [`Demo App`](https://sageknives.github.io/game-of-life/).
+Conways Game of Life using typescript and Canvas. [`Demo App`](https://sageknives.github.io/Game-of-Life/).
 
 ## To run locally
 

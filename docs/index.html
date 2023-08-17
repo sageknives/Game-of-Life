@@ -7,23 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body class="m-0 overflow-hidden bg-white">
-    <div
-      id="controls"
-      class="flex justify-center gap-8 bg-white items-center h-header"
-    >
-      <label for="cell-size"
-        >Cell Size:
+  <body class="m-0 overflow-hidden bg-white flex flex-col h-screen">
+    <div class="flex justify-center gap-2 md:gap-8 bg-white items-center p-2">
+      <label for="cell-size">
+        Size:
         <select id="cell-size">
-          <option selected value="5">5px</option>
-          <option value="10">10px</option>
+          <option value="5">5px</option>
+          <option selected value="10">10px</option>
           <option value="25">25px</option>
           <option value="50">50px</option>
           <option value="100">100px</option>
         </select>
       </label>
       <label for="start-percentage"
-        >Fill Percentage:
+        >Initial:
         <select id="start-percentage">
           <option value="5">5%</option>
           <option value="10">10%</option>
@@ -48,7 +45,7 @@
         </select>
       </label>
       <label for="fill-style"
-        >Cell Color:
+        >Color:
         <select id="fill-style">
           <option selected value="green">green</option>
           <option value="red">red</option>
@@ -58,20 +55,20 @@
         </select>
       </label>
       <label for="frame-rate"
-        >Frame Rate:
+        >Speed:
         <select id="frame-rate">
           <option value="1">1 fps</option>
           <option value="5">5 fps</option>
           <option value="10">10 fps</option>
           <option value="20">20 fps</option>
-          <option value="30">30 fps</option>
+          <option selected value="30">30 fps</option>
           <option value="40">40 fps</option>
           <option value="50">50 fps</option>
-          <option selected value="60">60 fps</option>
+          <option value="60">60 fps</option>
         </select>
       </label>
     </div>
-    <div id="wrapper" class="box-border p-0 w-screen h-pagewithheader">
+    <div id="wrapper" class="box-border p-0 w-screen h-full">
       <canvas id="canvas1"></canvas>
     </div>
     <script src="bundle.js"></script>

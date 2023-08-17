@@ -13,7 +13,7 @@ export class FrameRateController {
   update(timeStamp: number) {
     const deltaTime = timeStamp - this.timeStamp;
     if (deltaTime > 17) {
-      console.error(deltaTime);
+      // console.error(deltaTime);
     }
     this.timeStamp = timeStamp;
     if (this.frameTimer < this.frameInterval) {

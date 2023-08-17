@@ -1,5 +1,6 @@
 import { FrameRateController } from "./frameRateController";
 import { Game } from "./game";
+import "./style.css";
 
 window.addEventListener("load", function () {
   const canvas = document.getElementById("canvas1") as HTMLCanvasElement;

@@ -19,6 +19,24 @@ module.exports = {
         exclude: /(node_modules)/,
         use: [`swc-loader`],
       },
+      {
+        test: /\.css$/,
+        exclude: /node_modules/,
+        use: [
+          {
+            loader: "style-loader",
+          },
+          {
+            loader: "css-loader",
+            options: {
+              importLoaders: 1,
+            },
+          },
+          {
+            loader: "postcss-loader",
+          },
+        ],
+      },
     ],
   },
   resolve: {
@@ -28,7 +46,7 @@ module.exports = {
     new CopyPlugin({
       patterns: [
         {
-          from: "public/*.css",
+          from: "src/*.css",
           to: "[name][ext]",
         },
         {
